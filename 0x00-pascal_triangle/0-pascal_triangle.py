@@ -4,17 +4,17 @@
 """
 
 
-def pascal_triangle(n):
-    """Create a function def pascal_triangle(n): that returns a list of lists
-    of integers representing the Pascal’s triangle of n
+def pascal_triangle(num):
+    """Create a function def pascal_triangle(num): that returns a list of lists
+    of integers representing the Pascal’s triangle of num
     """
-    res = []
-    if n > 0:
-        for i in range(1, n + 1):
+    dbs = []
+    if num > 0:
+        for i in range(1, num + 1):
             level = []
             C = 1
             for j in range(1, i + 1):
                 level.append(C)
                 C = C * (i - j) // j
-            res.append(level)
+            dbs.append(level)
     return res
